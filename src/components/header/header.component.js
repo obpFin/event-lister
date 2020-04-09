@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { View } from 'react-native';
-import HeaderText from '../UI/headerText/headerText';
+import HeaderText from '../UI/headerText/headerText.component';
 
-import styles from './styles';
+import styles from './layout.styles';
 
 const Header = () => (
   <View style={styles.container}>
