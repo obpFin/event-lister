@@ -8,7 +8,7 @@ Components are implemented with business/presentational pattern.
 
 #### Running the app
 
-Place your events endpointo to .env: `API_URL=<your_events_endpoint`>
+Place your events endpoint to .env: `API_URL=<your_events_endpoint`>
 
 Run
 
