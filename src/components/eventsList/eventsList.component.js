@@ -1,16 +1,16 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+import Event from '../event/event.component';
 
 import styles from './eventsList.styles';
 
-const EventsOverview = ({ events }) => {
-  console.debug(events);
-  return events.rows.map(e => (
-    <View key={e.id} style={styles.container}>
-      <Text>{e.name}</Text>
-      <Text style={styles.hostText}>{e.host}</Text>
-    </View>
-  ));
-};
+const EventsOverview = ({ events }) => (
+  <View style={styles.container}>
+    {events.rows.map(event => (
+      <Event key={event.id} {...event} />
+    ))}
+  </View>
+);
 
 export default EventsOverview;
